@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Constraint Interface Builder Sample View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="NSConstraintInterfaceBuilderSample" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="NSConstraintInterfaceBuilderSampleViewController" customModule="chapter02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label With Baseline Constraints" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VA0-qm-TOS">
+                                <rect key="frame" x="8" y="59" width="88" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="88" id="T5H-La-Zuo"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="122" id="yPD-QD-0u4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label With Baseline Constraints" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31e-QM-jiA">
+                                <rect key="frame" x="8" y="757" width="88" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="122" id="B3O-0p-5cm"/>
+                                    <constraint firstAttribute="width" constant="88" id="YMs-na-Gtg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BaselineのAttributeは最初の行のBaselineにそろえます。意味的にはFirstBaseline" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7B-0K-ddE">
+                                <rect key="frame" x="104" y="59" width="118.33333333333331" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="119" id="iWz-QZ-cEc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BaselineのAttributeは最後の行のBaselineにそろえます。意味的にはLastBaseline" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRd-hq-WWP">
+                                <rect key="frame" x="104" y="692" width="118.33333333333331" height="122"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="122" id="hy4-cm-Ecf"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="119" id="xJC-w9-lpw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQt-cy-bG0">
+                                <rect key="frame" x="8" y="408.66666666666669" width="169.33333333333334" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Quw-he-BR0">
+                                <rect key="frame" x="191.66666666666666" y="408.66666666666669" width="84.666666666666657" height="35"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button2"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qRd-hq-WWP" firstAttribute="bottom" secondItem="31e-QM-jiA" secondAttribute="baseline" id="LgL-JS-ijp"/>
+                            <constraint firstItem="31e-QM-jiA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="PcA-AN-KS5"/>
+                            <constraint firstItem="qRd-hq-WWP" firstAttribute="leading" secondItem="31e-QM-jiA" secondAttribute="trailing" constant="8" symbolic="YES" id="QaZ-WL-aqB"/>
+                            <constraint firstItem="Quw-he-BR0" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="YEQ-ik-SVU"/>
+                            <constraint firstItem="31e-QM-jiA" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="YSu-5m-LBx"/>
+                            <constraint firstItem="l7B-0K-ddE" firstAttribute="firstBaseline" secondItem="VA0-qm-TOS" secondAttribute="firstBaseline" id="YvF-sL-gKt"/>
+                            <constraint firstItem="l7B-0K-ddE" firstAttribute="leading" secondItem="VA0-qm-TOS" secondAttribute="trailing" constant="8" symbolic="YES" id="hm1-kF-Xak"/>
+                            <constraint firstItem="YQt-cy-bG0" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="nBj-5G-jmK"/>
+                            <constraint firstItem="Quw-he-BR0" firstAttribute="width" secondItem="YQt-cy-bG0" secondAttribute="width" multiplier="0.5" id="pik-KB-gAh"/>
+                            <constraint firstItem="Quw-he-BR0" firstAttribute="leading" secondItem="YQt-cy-bG0" secondAttribute="trailing" constant="14.333333333333329" id="qIH-I2-69E"/>
+                            <constraint firstItem="VA0-qm-TOS" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="sgy-qB-Wcy"/>
+                            <constraint firstItem="VA0-qm-TOS" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="w93-An-2zU"/>
+                            <constraint firstItem="YQt-cy-bG0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="wCg-0x-aTl"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.946564885496173" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

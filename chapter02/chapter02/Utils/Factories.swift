@@ -1,0 +1,16 @@
+//
+//  Factories.swift
+//  chapter02
+//
+//  Created by 藤門莉生 on 2024/07/18.
+//
+
+import Foundation
+import UIKit
+
+func makeButton(title: String) -> UIButton {
+    let button = UIButton()
+    button.setTitle(title, for: .normal)
+    button.setTitleColor(.black, for: .normal)
+    return button
+}
