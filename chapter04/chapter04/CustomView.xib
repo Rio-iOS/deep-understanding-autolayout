@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomView" customModule="chapter04" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jeffsuke60" translatesAutoresizingMaskIntoConstraints="NO" id="EiR-mH-DKF">
+                    <rect key="frame" x="8" y="8" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="GNG-aO-75a"/>
+                        <constraint firstAttribute="width" secondItem="EiR-mH-DKF" secondAttribute="height" multiplier="1:1" id="u3w-F0-vOn"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ペンギン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Mg-3A-whP">
+                    <rect key="frame" x="76" y="8" width="309" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdX-99-SSt">
+                    <rect key="frame" x="275" y="57" width="110" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Like Button"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="EiR-mH-DKF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="8V5-7S-m0k"/>
+                <constraint firstAttribute="trailing" secondItem="8Mg-3A-whP" secondAttribute="trailing" constant="8" id="9Gd-Jr-JQM"/>
+                <constraint firstAttribute="trailing" secondItem="DdX-99-SSt" secondAttribute="trailing" constant="8" id="Yia-Dc-kpx"/>
+                <constraint firstItem="8Mg-3A-whP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="sN8-AE-xIc"/>
+                <constraint firstAttribute="bottom" secondItem="DdX-99-SSt" secondAttribute="bottom" constant="8" id="tjI-Ut-gq5"/>
+                <constraint firstItem="EiR-mH-DKF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="tnx-2f-Rx3"/>
+                <constraint firstItem="8Mg-3A-whP" firstAttribute="leading" secondItem="EiR-mH-DKF" secondAttribute="trailing" constant="8" symbolic="YES" id="yLb-dC-S2n"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-40.458015267175568" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="jeffsuke60" width="60" height="60"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
