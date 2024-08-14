@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sixth View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SixthViewController" customModule="chapter06" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O0j-k6-bpM">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="サンフランシスコ" id="xWP-p3-crU"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サンフランシスコのカフェに行ってきた。SOMA地区にあるシングルオリジンで有名なカフェだ。巨大な焙煎機で焙煎される豆の良い香りが店内に。いわゆる、ヒップスターと呼ばれる人々が、クロワッサンやコーヒーを楽しんでいた。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gD-Pn-HOH">
+                                <rect key="frame" x="8" y="401.66666666666669" width="377" height="101.66666666666669"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SF" translatesAutoresizingMaskIntoConstraints="NO" id="1MV-3u-wtE">
+                                <rect key="frame" x="8" y="111" width="377" height="282.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1MV-3u-wtE" secondAttribute="height" multiplier="300:225" id="NX1-Kt-78h"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0gD-Pn-HOH" secondAttribute="bottom" constant="8" id="AZQ-9f-Jma"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="1MV-3u-wtE" secondAttribute="trailing" constant="8" id="GGP-Nb-Ejd"/>
+                            <constraint firstItem="O0j-k6-bpM" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="II7-q8-JgI"/>
+                            <constraint firstItem="1MV-3u-wtE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="MFd-BR-95f"/>
+                            <constraint firstItem="0gD-Pn-HOH" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="NFI-0c-XmO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="0gD-Pn-HOH" secondAttribute="trailing" constant="8" id="SaZ-QJ-9De"/>
+                            <constraint firstItem="0gD-Pn-HOH" firstAttribute="top" secondItem="1MV-3u-wtE" secondAttribute="bottom" constant="8" id="T3Q-j8-oSJ"/>
+                            <constraint firstItem="O0j-k6-bpM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="VHU-iH-nq3"/>
+                            <constraint firstItem="O0j-k6-bpM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="WT9-VG-yYU"/>
+                            <constraint firstItem="1MV-3u-wtE" firstAttribute="top" secondItem="O0j-k6-bpM" secondAttribute="bottom" constant="8" id="g2o-Fx-GAB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="-55"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SF" width="300" height="225"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g2h-fP-Rjl">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fourteen View Controller-->
+        <scene sceneID="1Ob-0D-Wfy">
+            <objects>
+                <viewController id="g2h-fP-Rjl" customClass="FourteenViewController" customModule="chapter06" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yJL-fv-oFy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sw5-un-ZK7">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="トルツメ" id="HLJ-c3-lbV"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinstein" translatesAutoresizingMaskIntoConstraints="NO" id="Xa3-p1-aUQ">
+                                <rect key="frame" x="146.66666666666666" y="111" width="100" height="133"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Science without religion is lame, religion without science is blind." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnE-HK-KEA">
+                                <rect key="frame" x="8" y="251.99999999999997" width="377" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFs-oN-aYu">
+                                <rect key="frame" x="8" y="300.66666666666669" width="377" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Like"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ymX-eW-3H4">
+                                <rect key="frame" x="172" y="343.66666666666669" width="51" height="31"/>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRK-QA-eYY">
+                                <rect key="frame" x="0.0" y="382.66666666666669" width="393" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dJP-0q-lV0"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htE-Lq-4uH">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <items>
+                                    <barButtonItem title="Remove Label" id="DeE-w0-TVP"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Z6p-Dk-R2s"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GFs-oN-aYu" firstAttribute="leading" secondItem="Z6p-Dk-R2s" secondAttribute="leading" constant="8" id="2LY-WO-qFe"/>
+                            <constraint firstItem="ZRK-QA-eYY" firstAttribute="top" secondItem="ymX-eW-3H4" secondAttribute="bottom" constant="8" id="6aQ-rK-NUt"/>
+                            <constraint firstItem="Xa3-p1-aUQ" firstAttribute="centerX" secondItem="yJL-fv-oFy" secondAttribute="centerX" id="DO5-lp-r6M"/>
+                            <constraint firstItem="htE-Lq-4uH" firstAttribute="leading" secondItem="Z6p-Dk-R2s" secondAttribute="leading" id="FmU-bM-7e2"/>
+                            <constraint firstItem="Xa3-p1-aUQ" firstAttribute="top" secondItem="Sw5-un-ZK7" secondAttribute="bottom" constant="8" id="IKd-lL-1R0"/>
+                            <constraint firstItem="Z6p-Dk-R2s" firstAttribute="trailing" secondItem="ZRK-QA-eYY" secondAttribute="trailing" id="Ixu-Un-fxX"/>
+                            <constraint firstItem="ymX-eW-3H4" firstAttribute="centerX" secondItem="yJL-fv-oFy" secondAttribute="centerX" id="Oh5-05-8Nn"/>
+                            <constraint firstItem="Sw5-un-ZK7" firstAttribute="trailing" secondItem="Z6p-Dk-R2s" secondAttribute="trailing" id="VWL-I4-arv"/>
+                            <constraint firstItem="ZRK-QA-eYY" firstAttribute="leading" secondItem="Z6p-Dk-R2s" secondAttribute="leading" id="XW8-lc-V2D"/>
+                            <constraint firstItem="tnE-HK-KEA" firstAttribute="top" secondItem="Xa3-p1-aUQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Ygf-rM-oIm"/>
+                            <constraint firstItem="ymX-eW-3H4" firstAttribute="top" secondItem="GFs-oN-aYu" secondAttribute="bottom" constant="8" id="Zh4-jM-CSu"/>
+                            <constraint firstItem="Sw5-un-ZK7" firstAttribute="top" secondItem="Z6p-Dk-R2s" secondAttribute="top" id="ZxB-mi-cJS"/>
+                            <constraint firstItem="GFs-oN-aYu" firstAttribute="top" secondItem="tnE-HK-KEA" secondAttribute="bottom" constant="8" id="gYu-KT-Tak"/>
+                            <constraint firstItem="htE-Lq-4uH" firstAttribute="trailing" secondItem="Z6p-Dk-R2s" secondAttribute="trailing" id="qkq-dP-rs9"/>
+                            <constraint firstItem="Z6p-Dk-R2s" firstAttribute="trailing" secondItem="GFs-oN-aYu" secondAttribute="trailing" constant="8" id="qoY-2B-cWn"/>
+                            <constraint firstItem="tnE-HK-KEA" firstAttribute="leading" secondItem="Z6p-Dk-R2s" secondAttribute="leading" constant="8" id="r3J-4q-SjA"/>
+                            <constraint firstItem="Z6p-Dk-R2s" firstAttribute="trailing" secondItem="tnE-HK-KEA" secondAttribute="trailing" constant="8" id="rdA-6u-LU1"/>
+                            <constraint firstItem="Sw5-un-ZK7" firstAttribute="leading" secondItem="Z6p-Dk-R2s" secondAttribute="leading" id="rxn-QK-pDZ"/>
+                            <constraint firstItem="htE-Lq-4uH" firstAttribute="bottom" secondItem="Z6p-Dk-R2s" secondAttribute="bottom" id="sSV-pp-bWo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Xa3-p1-aUQ" id="IGf-5Y-xyQ"/>
+                        <outlet property="imageViewTopConstarint" destination="IKd-lL-1R0" id="82x-xI-F61"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Rf-wH-Qco" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11.450381679389313" y="-49.295774647887328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AlbertEinstein" width="100" height="133"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

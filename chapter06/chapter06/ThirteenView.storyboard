@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mEh-Ju-Btv">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Thirteen View Controller-->
+        <scene sceneID="Otk-fz-NHn">
+            <objects>
+                <viewController id="mEh-Ju-Btv" customClass="ThirteenViewController" customModule="chapter06" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HqQ-61-csq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5CI-j6-SO3">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="トルツメ" id="PKe-DG-x2u"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinstein" translatesAutoresizingMaskIntoConstraints="NO" id="wCw-Ce-XVV">
+                                <rect key="frame" x="146.66666666666666" y="111" width="100" height="133"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Science without religion is lame, religion without science is blind." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VbN-Y4-cOT">
+                                <rect key="frame" x="8" y="251.99999999999997" width="377" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KN6-sv-lzt">
+                                <rect key="frame" x="8" y="300.66666666666669" width="377" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Like"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0cb-rg-HaL">
+                                <rect key="frame" x="172" y="343.66666666666669" width="51" height="31"/>
+                            </switch>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4y-cL-Ier">
+                                <rect key="frame" x="0.0" y="382.66666666666669" width="393" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xvx-Am-mC6"/>
+                                </constraints>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qnL-BT-MhV">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <items>
+                                    <barButtonItem title="Remove Label" id="n0q-MB-6Yf"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="lbe-dI-nXY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qnL-BT-MhV" firstAttribute="trailing" secondItem="lbe-dI-nXY" secondAttribute="trailing" id="22U-xB-J7u"/>
+                            <constraint firstItem="0cb-rg-HaL" firstAttribute="top" secondItem="KN6-sv-lzt" secondAttribute="bottom" constant="8" id="CBD-rE-ewe"/>
+                            <constraint firstItem="KN6-sv-lzt" firstAttribute="leading" secondItem="lbe-dI-nXY" secondAttribute="leading" constant="8" id="EgL-if-axN"/>
+                            <constraint firstItem="lbe-dI-nXY" firstAttribute="trailing" secondItem="VbN-Y4-cOT" secondAttribute="trailing" constant="8" id="FwJ-KW-r06"/>
+                            <constraint firstItem="5CI-j6-SO3" firstAttribute="top" secondItem="lbe-dI-nXY" secondAttribute="top" id="LNS-Uj-PZR"/>
+                            <constraint firstItem="5CI-j6-SO3" firstAttribute="leading" secondItem="lbe-dI-nXY" secondAttribute="leading" id="Nmp-qf-9ag"/>
+                            <constraint firstItem="lbe-dI-nXY" firstAttribute="trailing" secondItem="n4y-cL-Ier" secondAttribute="trailing" id="PUw-Xk-rrX"/>
+                            <constraint firstItem="0cb-rg-HaL" firstAttribute="centerX" secondItem="HqQ-61-csq" secondAttribute="centerX" id="XGk-BF-6Y8"/>
+                            <constraint firstItem="n4y-cL-Ier" firstAttribute="leading" secondItem="lbe-dI-nXY" secondAttribute="leading" id="axN-jQ-ze7"/>
+                            <constraint firstItem="wCw-Ce-XVV" firstAttribute="top" secondItem="5CI-j6-SO3" secondAttribute="bottom" constant="8" id="brU-n8-9Ch"/>
+                            <constraint firstItem="qnL-BT-MhV" firstAttribute="bottom" secondItem="lbe-dI-nXY" secondAttribute="bottom" id="cSn-ID-TAX"/>
+                            <constraint firstItem="n4y-cL-Ier" firstAttribute="top" secondItem="0cb-rg-HaL" secondAttribute="bottom" constant="8" id="ePA-VD-Avi"/>
+                            <constraint firstItem="5CI-j6-SO3" firstAttribute="trailing" secondItem="lbe-dI-nXY" secondAttribute="trailing" id="f7x-eq-ckR"/>
+                            <constraint firstItem="wCw-Ce-XVV" firstAttribute="centerX" secondItem="HqQ-61-csq" secondAttribute="centerX" id="mNX-Ll-E6u"/>
+                            <constraint firstItem="qnL-BT-MhV" firstAttribute="leading" secondItem="lbe-dI-nXY" secondAttribute="leading" id="p9d-ZC-g0S"/>
+                            <constraint firstItem="VbN-Y4-cOT" firstAttribute="leading" secondItem="lbe-dI-nXY" secondAttribute="leading" constant="8" id="qxn-sr-YAw"/>
+                            <constraint firstItem="KN6-sv-lzt" firstAttribute="top" secondItem="VbN-Y4-cOT" secondAttribute="bottom" constant="8" id="t2j-Hd-zT9"/>
+                            <constraint firstItem="VbN-Y4-cOT" firstAttribute="top" secondItem="wCw-Ce-XVV" secondAttribute="bottom" constant="8" symbolic="YES" id="tvX-mT-2ie"/>
+                            <constraint firstItem="lbe-dI-nXY" firstAttribute="trailing" secondItem="KN6-sv-lzt" secondAttribute="trailing" constant="8" id="yxc-L8-UH2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="wCw-Ce-XVV" id="raK-Xi-93f"/>
+                        <outlet property="label" destination="VbN-Y4-cOT" id="oBX-y4-UWS"/>
+                        <outlet property="labelTopConstraint" destination="tvX-mT-2ie" id="bEd-8N-eVb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vNU-rZ-ZcJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-11.450381679389313" y="-49.295774647887328"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AlbertEinstein" width="100" height="133"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

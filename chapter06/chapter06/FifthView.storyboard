@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fifth View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="FifthViewController" customModule="chapter06" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ht1-gi-1Qb">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="名言" id="hpN-v6-4Lc"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RNv-Yj-tbA">
+                                <rect key="frame" x="8" y="103.00000000000001" width="377" height="142.33333333333337"/>
+                                <string key="text">Gravitation cannot be held responsible for people falling in love. How on earth can you explain in terms of chemistry and physics so important a biological phenomenon as first love? Put your hand on a stove for a minute and it seems like an hour. Sit with that special girl for an hour and it seems like a minute. That's relativity.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinstein" translatesAutoresizingMaskIntoConstraints="NO" id="vWZ-5n-gcr">
+                                <rect key="frame" x="8" y="253.33333333333337" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Ccx-hI-SCC"/>
+                                    <constraint firstAttribute="width" constant="60" id="ab8-TU-VeH"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlbertEinstein" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7H3-aP-ucl">
+                                <rect key="frame" x="76" y="292.33333333333331" width="105.66666666666669" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vWZ-5n-gcr" secondAttribute="bottom" constant="8" id="2Gc-IT-z7U"/>
+                            <constraint firstItem="7H3-aP-ucl" firstAttribute="leading" secondItem="vWZ-5n-gcr" secondAttribute="trailing" constant="8" symbolic="YES" id="7FG-Co-J4p"/>
+                            <constraint firstItem="RNv-Yj-tbA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="Afi-VO-egd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RNv-Yj-tbA" secondAttribute="trailing" constant="8" id="BZo-Fq-5aN"/>
+                            <constraint firstItem="Ht1-gi-1Qb" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="F9b-zX-RSz"/>
+                            <constraint firstItem="vWZ-5n-gcr" firstAttribute="top" secondItem="RNv-Yj-tbA" secondAttribute="bottom" constant="8" id="GNu-UP-MT5"/>
+                            <constraint firstItem="Ht1-gi-1Qb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="PXw-WH-bCZ"/>
+                            <constraint firstItem="7H3-aP-ucl" firstAttribute="bottom" secondItem="vWZ-5n-gcr" secondAttribute="bottom" id="Ya1-yb-DUV"/>
+                            <constraint firstItem="Ht1-gi-1Qb" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="eGu-Cn-93a"/>
+                            <constraint firstItem="vWZ-5n-gcr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="eP8-rR-hmk"/>
+                            <constraint firstItem="RNv-Yj-tbA" firstAttribute="top" secondItem="Ht1-gi-1Qb" secondAttribute="bottom" id="lUD-8z-igZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="-55"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AlbertEinstein" width="100" height="133"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

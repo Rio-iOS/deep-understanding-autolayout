@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SecondViewController" customModule="chapter06" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p94-2F-FHh">
+                                <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                                <items>
+                                    <navigationItem title="カフェ検索条件" id="eW6-Zv-vPO"/>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_cheap_2" translatesAutoresizingMaskIntoConstraints="NO" id="Gi3-0o-iYK">
+                                <rect key="frame" x="16" y="119" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Mbk-3p-OE7"/>
+                                    <constraint firstAttribute="height" constant="30" id="ikF-dE-jZi"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500円以下" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p7v-FI-hlP">
+                                <rect key="frame" x="62" y="123.66666666666669" width="250" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qmq-U2-j54">
+                                <rect key="frame" x="328" y="118.66666666666669" width="51" height="31"/>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKc-HN-Brs">
+                                <rect key="frame" x="16" y="778" width="361" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="T7t-tI-UXN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="検索"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p7v-FI-hlP" firstAttribute="leading" secondItem="Gi3-0o-iYK" secondAttribute="trailing" constant="16" id="2D3-bC-HbS"/>
+                            <constraint firstItem="Gi3-0o-iYK" firstAttribute="top" secondItem="p94-2F-FHh" secondAttribute="bottom" constant="16" id="8UJ-8f-e0Q"/>
+                            <constraint firstItem="Qmq-U2-j54" firstAttribute="centerY" secondItem="Gi3-0o-iYK" secondAttribute="centerY" id="ASI-B0-E39"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Qmq-U2-j54" secondAttribute="trailing" constant="16" id="BGT-2p-37f"/>
+                            <constraint firstItem="p94-2F-FHh" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="LTa-8A-3lf"/>
+                            <constraint firstItem="nKc-HN-Brs" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="aZs-r4-QH3"/>
+                            <constraint firstItem="Gi3-0o-iYK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="cYq-dd-rpp"/>
+                            <constraint firstItem="Qmq-U2-j54" firstAttribute="leading" secondItem="p7v-FI-hlP" secondAttribute="trailing" constant="16" id="g4T-gc-TS9"/>
+                            <constraint firstItem="p94-2F-FHh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="myy-z1-wR2"/>
+                            <constraint firstItem="nKc-HN-Brs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="pWX-KW-KHB"/>
+                            <constraint firstItem="p7v-FI-hlP" firstAttribute="centerY" secondItem="Gi3-0o-iYK" secondAttribute="centerY" id="v8B-bJ-MxT"/>
+                            <constraint firstItem="p94-2F-FHh" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="yNm-eo-7XD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nKc-HN-Brs" secondAttribute="trailing" constant="16" id="zR2-O7-VSs"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_cheap_2" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
