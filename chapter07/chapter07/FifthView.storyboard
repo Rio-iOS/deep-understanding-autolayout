@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fifth View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="FifthViewController" customModule="chapter07" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="マルチーズ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cup-Nz-1qn">
+                                <rect key="frame" x="8" y="59" width="377" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="APL-Ta-1ff">
+                                <rect key="frame" x="8" y="112.33333333333331" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="DXh-ZQ-LLb"/>
+                                    <constraint firstAttribute="width" constant="160" id="VgC-DQ-DUD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljG-7q-WXU">
+                                <rect key="frame" x="8" y="287.33333333333331" width="377" height="182.66666666666669"/>
+                                <string key="text">地中海に浮かぶ島国のマルタ島で生まれたことからこの名がついた。性質は大人しく、人なつっこい。明るく、外交的ではあるが、神経質なところもある。しかし、基本的に従順であり初心者でも飼いやすい。抱き犬として知られ、甘えたがり。大胆なところがあり、他の大型犬に対しても臆することなく振舞う面もある。暑さ・寒さにはあまり強くないので、屋内で飼うのが一般的である。下毛がないので抜け毛がない。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Cup-Nz-1qn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="2DB-PQ-80T"/>
+                            <constraint firstItem="ljG-7q-WXU" firstAttribute="leading" secondItem="APL-Ta-1ff" secondAttribute="trailing" constant="15" id="3Lk-hP-WMw"/>
+                            <constraint firstItem="ljG-7q-WXU" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="Goo-ga-FGz"/>
+                            <constraint firstItem="APL-Ta-1ff" firstAttribute="top" secondItem="Cup-Nz-1qn" secondAttribute="bottom" constant="15" id="JH7-Ec-jjU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Cup-Nz-1qn" secondAttribute="trailing" constant="8" id="KM8-wK-2vM"/>
+                            <constraint firstItem="Cup-Nz-1qn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="O67-jo-eXO"/>
+                            <constraint firstItem="ljG-7q-WXU" firstAttribute="top" secondItem="Cup-Nz-1qn" secondAttribute="bottom" constant="15" id="VoR-H6-boe"/>
+                            <constraint firstItem="ljG-7q-WXU" firstAttribute="top" secondItem="APL-Ta-1ff" secondAttribute="bottom" constant="15" id="bJo-oW-alY"/>
+                            <constraint firstItem="APL-Ta-1ff" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="8" id="efg-ug-3Ci"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ljG-7q-WXU" secondAttribute="trailing" constant="8" id="qUj-Tl-RJI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="3Lk-hP-WMw"/>
+                                <exclude reference="VoR-H6-boe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="detailLabelLandscapeLeadingConstraint" destination="3Lk-hP-WMw" id="TuU-9O-oEf"/>
+                        <outlet property="detailLabelLandscapeTopConstraint" destination="VoR-H6-boe" id="OZS-d9-Yrc"/>
+                        <outlet property="detailLabelPortraitLeadingConstraint" destination="Goo-ga-FGz" id="YDD-Zx-sIQ"/>
+                        <outlet property="detailLabelPortraitTopConstraint" destination="bJo-oW-alY" id="fL1-kQ-S91"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73" y="-34"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

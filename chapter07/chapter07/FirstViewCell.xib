@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FirstViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FirstViewCell" rowHeight="150" id="Xca-eQ-S5I" customClass="FirstViewCell" customModule="chapter07" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Xca-eQ-S5I" id="mmD-mi-gDH">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmS-13-w6s" customClass="FirstViewLabel" customModule="chapter07" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="39"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Detail Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYw-Pf-8Dj" customClass="FirstViewLabel" customModule="chapter07" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="47" width="393" height="103"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VYw-Pf-8Dj" firstAttribute="top" secondItem="WmS-13-w6s" secondAttribute="bottom" constant="8" id="5TF-ea-4ch"/>
+                    <constraint firstAttribute="trailing" secondItem="VYw-Pf-8Dj" secondAttribute="trailing" id="CLQ-Zz-lAE"/>
+                    <constraint firstAttribute="bottom" secondItem="VYw-Pf-8Dj" secondAttribute="bottom" id="apX-rN-FX8"/>
+                    <constraint firstItem="WmS-13-w6s" firstAttribute="leading" secondItem="mmD-mi-gDH" secondAttribute="leading" id="iJY-hd-S5D"/>
+                    <constraint firstItem="WmS-13-w6s" firstAttribute="top" secondItem="mmD-mi-gDH" secondAttribute="top" id="jwe-dx-90N"/>
+                    <constraint firstAttribute="trailing" secondItem="WmS-13-w6s" secondAttribute="trailing" id="m3x-75-4GK"/>
+                    <constraint firstItem="VYw-Pf-8Dj" firstAttribute="leading" secondItem="mmD-mi-gDH" secondAttribute="leading" id="p5I-57-icz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="VYw-Pf-8Dj" id="Uwc-4l-dVE"/>
+                <outlet property="titleLabel" destination="WmS-13-w6s" id="ILv-d7-wD9"/>
+            </connections>
+            <point key="canvasLocation" x="-150.38167938931298" y="102.11267605633803"/>
+        </tableViewCell>
+    </objects>
+</document>

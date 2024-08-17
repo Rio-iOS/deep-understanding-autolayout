@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>detail</key>
+		<string>No, no, you&apos;re not thinking; you&apos;re just being logical.</string>
+		<key>name</key>
+		<string>Niels Bohr</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>Scientific discovery and scientific knowledge have been achieved only by those who have gone in pursuit of it without any practical purpose whatsoever in view.</string>
+		<key>name</key>
+		<string>Max Planck</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.</string>
+		<key>name</key>
+		<string>Albert Einstein</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>Those who explore an unknown world are travelers without a map; the map is the result of exploration. The position of their destination is not known to them, and the direct path that leads to it is not yet made.</string>
+		<key>name</key>
+		<string>Hideki Yukawa</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>This work contains many things which are new and interesting. Unfortunately, everything that is new is not interesting, and everything which is interesting, is not new.</string>
+		<key>name</key>
+		<string>Lev Landau</string>
+	</dict>
+</array>
+</plist>
