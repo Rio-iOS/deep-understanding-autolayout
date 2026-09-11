@@ -40,6 +40,16 @@ swift Scripts/verify.swift --index 0
 
 `Quality` ワークフローは上記と同じ一覧・スクリプトを使い、対象ごとにビルドまたはテストを実行します。ビルドの成功だけでは、画面表示、アクセシビリティ、通信先の動作、テスト網羅性は保証されません。UIサンプルはSimulator上での操作確認も必要です。
 
+## 振る舞いの回帰テスト
+
+共通祖先を探すAPIをnearestCommonAncestor(with:)へ改名し、オブジェクトの同一性で探索します。制約の有効化はUILayoutGuideのowningViewも考慮し、共通祖先がなければfalseを返します。既存制約の検索は上位の祖先に設置された制約も含めます。
+
+共通祖先・自分自身・別階層、UILayoutGuide、上位祖先に置かれた制約をUIKit上で検証します。
+
+```sh
+swift Scripts/test-layout.swift
+```
+
 ## Swiftコード品質
 
 [設計・命名・所有関係の方針と、この教材への適用範囲](SWIFT-QUALITY.md)を参照してください。

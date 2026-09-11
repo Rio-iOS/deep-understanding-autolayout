@@ -4,6 +4,10 @@
 
 Auto Layoutの制約を比較する教材です。画面とIBOutletのアクセス範囲を限定し、FifthViewControllerの表記とStoryboard・プロジェクト参照を統一しています。制約を説明する画面へ空の業務層は追加していません。
 
+共通祖先を探すAPIをnearestCommonAncestor(with:)へ改名し、オブジェクトの同一性で探索します。制約の有効化はUILayoutGuideのowningViewも考慮し、共通祖先がなければfalseを返します。既存制約の検索は上位の祖先に設置された制約も含めます。
+
+共通祖先・自分自身・別階層、UILayoutGuide、上位祖先に置かれた制約をUIKit上で検証します。
+
 ## 共通の設計基準
 
 - 型・メンバーは必要な範囲だけに公開します。内部状態は`private`、外部から読む状態は必要に応じて`private(set)`にします。プロトコルの要件、Storyboardの接続、サブクラスからの利用を確認して変更します。
