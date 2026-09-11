@@ -1,10 +1,3 @@
-//
-//  FirstViewController.swift
-//  chapter09
-//
-//  Created by 藤門莉生 on 2024/08/26.
-//
-
 import Foundation
 import UIKit
 

@@ -1,10 +1,3 @@
-//
-//  FifthViewController.swift
-//  chapter07
-//
-//  Created by 藤門莉生 on 2024/08/17.
-//
-
 import Foundation
 import UIKit
 

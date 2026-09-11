@@ -1,10 +1,3 @@
-//
-//  SecondViewController.swift
-//  chapter05
-//
-//  Created by 藤門莉生 on 2024/08/12.
-//
-
 import Foundation
 import UIKit
 
@@ -93,11 +86,11 @@ private extension SecondViewController {
         //   - 方向性のAlignment Optionは、VFLを左右どちらから読んでオブジェクト配置を実行するか指定する。
         //   - 水平方向のAlignment Otionは以下のパラメータから選択することが可能である。
         //   - 水平方向のAlignment Option
-        //     - NSLayoutFrmatAlignAllLeft: 全てのビューを左寄せ
-        //     - NSLayoutFrmatAlignAllRight: 全てのビューを右寄せ
-        //     - NSLayoutFrmatAlignAllLeading: 全てのビューをLeading寄せ
-        //     - NSLayoutFrmatAlignAllTrailing: 全てのビューをTrailing寄せ
-        //     - NSLayoutFrmatAlignAllCenterX: 全てのビューをx方向中央に揃える
+        //     - NSLayoutFormatAlignAllLeft: 全てのビューを左寄せ
+        //     - NSLayoutFormatAlignAllRight: 全てのビューを右寄せ
+        //     - NSLayoutFormatAlignAllLeading: 全てのビューをLeading寄せ
+        //     - NSLayoutFormatAlignAllTrailing: 全てのビューをTrailing寄せ
+        //     - NSLayoutFormatAlignAllCenterX: 全てのビューをx方向中央に揃える
         //   - 垂直方向のAlignment Optionの値を設定できる。
         //     - NSLayoutFormatAlignAllTop: 全てのビューを上部寄せ
         //     - NSLayoutFormatAlignAllBottom: 全てのビューを下部寄せ

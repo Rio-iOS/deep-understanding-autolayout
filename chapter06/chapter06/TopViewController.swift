@@ -1,10 +1,3 @@
-//
-//  TopViewController.swift
-//  chapter06
-//
-//  Created by 藤門莉生 on 2024/08/13.
-//
-
 import UIKit
 
 final class TopViewController: UIViewController {

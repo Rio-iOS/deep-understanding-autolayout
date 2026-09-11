@@ -1,17 +1,9 @@
-//
-//  ViewController.swift
-//  chapter01
-//
-//  Created by 藤門莉生 on 2024/07/16.
-//
-
 import UIKit
 
 final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         showViewSize()
         showDeviceModel()
         showTraitCollection()

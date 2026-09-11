@@ -1,10 +1,3 @@
-//
-//  Person.swift
-//  chapter07
-//
-//  Created by 藤門莉生 on 2024/08/16.
-//
-
 import Foundation
 
 struct Person {

@@ -1,15 +1,11 @@
-//
-//  UIView+Extensions.swift
-//  chapter05
-//
-//  Created by 藤門莉生 on 2024/08/12.
-//
-
 import Foundation
 import UIKit
 
 extension UIView {
-    /// selfと共通の祖先ビューを探すメソッド
+    /// 自分自身を含め、`target`から最も近い共通の祖先ビューを返します。
+    ///
+    /// - Parameter target: 共通の祖先を探す相手のビュー。
+    /// - Returns: 共通の祖先。異なるビュー階層に属する場合は`nil`。
     func commonSuperViewWith(target: UIView) -> UIView? {
         // selfを含んだ祖先ビューの配列を取得
         var hierarcy: [UIView] = []

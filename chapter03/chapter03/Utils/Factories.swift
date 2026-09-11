@@ -1,10 +1,3 @@
-//
-//  Factories.swift
-//  chapter03
-//
-//  Created by 藤門莉生 on 2024/07/19.
-//
-
 import Foundation
 import UIKit
 
