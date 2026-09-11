@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class FirstViewController: UIViewController {
+final class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupConstraints()

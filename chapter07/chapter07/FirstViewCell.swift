@@ -9,15 +9,15 @@ import Foundation
 import UIKit
 
 final class FirstViewCell: UITableViewCell {
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var detailLabel: UILabel!
-   
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var detailLabel: UILabel!
+
     static let nibName = "FirstViewCell"
     static let reuseIdentifier = "FirstViewCell"
 
     override class func awakeFromNib() {
         super.awakeFromNib()
-        
+
         // UITableViewCellのcontentViewに対して
         // 「オブジェクトのグループ化パターン」を適用することで
         // 内部からセルの高さを計算している。
@@ -47,7 +47,7 @@ final class FirstViewCell: UITableViewCell {
         // この問題は、UILabelの幅の基準となるpreferredMaxLayoutWidthプロパティを用いることで
         // 解決することができる。
     }
-    
+
     func layoutWithData(data: Person) {
         titleLabel.text = data.name
         detailLabel.text = data.detail

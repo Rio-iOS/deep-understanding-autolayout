@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-class ViewLifeCycleSampleViewController: UIViewController {
+final class ViewLifeCycleSampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("✅do - viewDidLoad()")
         setupViews()
         showExplainAboutViewLifeCycle()
     }
-   
+
     // ビューの制約を更新する必要がある場合、ビューコントローラに通知
     override func updateViewConstraints() {
         super.updateViewConstraints()
@@ -26,25 +26,25 @@ class ViewLifeCycleSampleViewController: UIViewController {
 private extension ViewLifeCycleSampleViewController {
     func setupViews() {
         view.backgroundColor = .systemBackground
-        
+
         let customView = CustomView()
         customView.translatesAutoresizingMaskIntoConstraints = false
-        
+
         view.addSubview(customView)
-        
+
         NSLayoutConstraint.activate([
             customView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             customView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             customView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             customView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
         ])
-       
+
         customView.updateConstraintsIfNeeded()
         customView.setNeedsUpdateConstraints()
         customView.layoutIfNeeded()
         customView.setNeedsLayout()
     }
-    
+
     func showExplainAboutViewLifeCycle() {
         print("✅ Viewオブジェクトのレイアウトライフサイクルは以下")
         print("✅ 1. 制約の更新")
@@ -72,7 +72,7 @@ fileprivate class CustomView: UIView {
         print("✅do - updateConstraints()")
         print("✅updateConstraints()のoverrideにより、制約の更新時に独自の処理を追加可能")
     }
-    
+
     // 開発者が制約の更新を明示的に実行
     // 直接updateConstraints()は呼び出さない
     // frameの更新までは保証されない
@@ -80,7 +80,7 @@ fileprivate class CustomView: UIView {
         super.updateConstraintsIfNeeded()
         print("✅do - updateConstraintsIfNeeded()")
     }
-    
+
     // 制約を更新する必要があるというフラグが立つ
     // 次のレイアウトパスで制約の再計算が実行される
     // updateConstraintsIfNeeded()とは違い
@@ -91,7 +91,7 @@ fileprivate class CustomView: UIView {
     override func setNeedsUpdateConstraints() {
         print("✅do - setNeedsUpdateConstraints()")
     }
-   
+
     // レイアウト情報が更新されると、レイアウトを更新するために
     // レイアウトエンジンが計算したフレーム情報をビューが受け取り、
     // layoutSubviews()が呼ばれる。
@@ -106,7 +106,7 @@ fileprivate class CustomView: UIView {
         super.layoutSubviews()
         print("✅do - layoutSubviews()")
     }
-   
+
     // layoutIfNeeded()を呼ぶと、即座にフレームが更新される
     // 直後にフレーム更新後の情報を用いて何らかの処理を行う場合は、
     // layoutIfNeeded()を利用
@@ -118,7 +118,7 @@ fileprivate class CustomView: UIView {
         super.layoutIfNeeded()
         print("✅do - layoutIfNeeded()")
     }
-   
+
     // setNeedsLayout()メソッドを呼ぶと、
     // フレームを更新する必要があるというフラグが立ち
     // 次のレイアウトパスで制約の再計算が実行される

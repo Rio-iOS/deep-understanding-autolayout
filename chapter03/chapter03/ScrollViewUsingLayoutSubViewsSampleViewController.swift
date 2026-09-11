@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ScrollViewUsingLayoutSubViewsSampleViewController: UIViewController {
+final class ScrollViewUsingLayoutSubViewsSampleViewController: UIViewController {
     private let customViewWidth = 200
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,17 +19,17 @@ class ScrollViewUsingLayoutSubViewsSampleViewController: UIViewController {
 private extension ScrollViewUsingLayoutSubViewsSampleViewController {
     func setupViews() {
         view.backgroundColor = .systemBackground
-        
+
         let customScrollView = CustomScrollView()
-        
+
         view.addSubview(customScrollView)
-        
+
         NSLayoutConstraint.activate([
             customScrollView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             customScrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             customScrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
         ])
-        
+
         view.layoutIfNeeded()
     }
 }
@@ -41,11 +41,11 @@ fileprivate class CustomView: UIView {
         layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = 1.0
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override var intrinsicContentSize: CGSize {
         .init(width: 200, height: 100)
     }
@@ -55,7 +55,7 @@ fileprivate class CustomScrollView: UIScrollView {
     private var contentXCenter: CGFloat = 0
     private let limitArrangedSubViewsCount = 3
     private let stackView = UIStackView()
-    
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .systemBackground
@@ -64,11 +64,11 @@ fileprivate class CustomScrollView: UIScrollView {
         translatesAutoresizingMaskIntoConstraints = false
         setupViews()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-   
+
     // layoutSubViews()をオーバーラードすることで、
     // 効率的なレイアウトを実現することができるが、
     // オーバーライドするには以下の2点を気を付ける。
@@ -86,13 +86,13 @@ fileprivate class CustomScrollView: UIScrollView {
         print("✅ contentOffset.x: \(contentOffset.x)")
         contentXCenter = (contentSize.width + contentOffset.x) / 2
         print("✅ contentXCenter: \(contentXCenter)")
-        
+
         if (contentXCenter/2) <= contentOffset.x {
             let customView = CustomView()
             stackView.addArrangedSubview(customView)
             contentSize = CGSize(width: stackView.bounds.width, height: stackView.bounds.height)
         }
-        
+
         if (contentOffset.x <= 0) {
             while limitArrangedSubViewsCount < stackView.arrangedSubviews.count {
                 print("✅stackView.arrangedSubViews.count: \(stackView.arrangedSubviews.count)")
@@ -109,27 +109,27 @@ fileprivate class CustomScrollView: UIScrollView {
 private extension CustomScrollView {
     func setupViews() {
         contentXCenter = (contentSize.width + contentOffset.x) / 2
-        
+
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.spacing = 8.0
         stackView.axis = .horizontal
-        
+
         for _ in 0..<3 {
             let customView = CustomView()
             stackView.addArrangedSubview(customView)
         }
-        
+
         addSubview(stackView)
-        
+
         NSLayoutConstraint.activate([
             heightAnchor.constraint(equalTo: stackView.heightAnchor),
-            
+
             stackView.topAnchor.constraint(equalTo: topAnchor),
             stackView.leadingAnchor.constraint(equalTo: leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
-        
+
         contentSize = CGSize(width: stackView.bounds.width, height: stackView.bounds.height)
     }
 }

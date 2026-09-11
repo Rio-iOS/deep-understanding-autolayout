@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class UIStackViewAutoLayoutSampleViewController: UIViewController {
+final class UIStackViewAutoLayoutSampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }

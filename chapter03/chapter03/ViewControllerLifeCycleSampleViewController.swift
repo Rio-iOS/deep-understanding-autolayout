@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ViewControllerLifeCycleSampleViewController: UIViewController {
+final class ViewControllerLifeCycleSampleViewController: UIViewController {
     private var dogManager: DogManager?
     private var pageCount: Int?
     private lazy var nameLabel: UILabel = {
@@ -48,15 +48,15 @@ class ViewControllerLifeCycleSampleViewController: UIViewController {
         contentView.backgroundColor = .systemBackground
         // ビューをViewControllerに代入
         view = contentView
-        
+
         let button = UIButton(type: .system)
         button.setTitle("Button", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        
+
         view.addSubview(button)
         view.addSubview(nameLabel)
         view.addSubview(textField)
-        
+
         button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         nameLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -64,7 +64,7 @@ class ViewControllerLifeCycleSampleViewController: UIViewController {
         textField.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         textField.centerYAnchor.constraint(equalTo: nameLabel.centerYAnchor, constant: 40).isActive = true
     }
-   
+
     // loadView()が完了した時に呼ばれるメソッドで、
     // オーバーライドして用いる。
     // 通常このメソッドで、loadView()で読み込みが完了したUIオブジェクトに
@@ -74,15 +74,15 @@ class ViewControllerLifeCycleSampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("✅ do - viewDidLoad()")
-        
+
         dogManager = DogManager(name: "dog")
         pageCount = 0
-        
+
         showScreenSize()
         showScreenSizeUsingWindow()
         showScreenSizeUsingWindowScene()
     }
- 
+
     // レイアウト
     // ビューのレイアウトが開始される時に呼ばれるメソッドで、
     // この時に実行したい処理がある場合は、オーバーライドして用いる。
@@ -106,7 +106,7 @@ class ViewControllerLifeCycleSampleViewController: UIViewController {
         super.viewWillLayoutSubviews()
         print("✅ do - viewWillLayoutSubviews()")
     }
-   
+
     // ビューのレイアウトが完了した時に呼ばれるメソッドで、
     // この時に実行したい処理がある場合に、オーバーライドして用いる。
     // UIViewのレイアウトサイクルにおける、layoutSubviews()による
@@ -116,12 +116,12 @@ class ViewControllerLifeCycleSampleViewController: UIViewController {
         super.viewDidLayoutSubviews()
         print("✅ do - viewDidLayoutSubviews()")
     }
-    
+
     override func updateViewConstraints() {
         super.updateViewConstraints()
         print("✅ do - updateViewConstraints()")
     }
- 
+
     // ビューの表示
     // ビューが表示される直前に呼ばれるメソッドで、オーバーライドして用いる。
     // このメソッドは表示される直前であればいつでも呼ばれるため、
@@ -142,7 +142,7 @@ class ViewControllerLifeCycleSampleViewController: UIViewController {
         // 動的な値のセット
         nameLabel.text = dogManager?.name
     }
-  
+
     // ビューが表示された直後に呼ばれるメソッドで、オーバーライドして用いる。
     // UIViewのレイアウトサイクルの最後のステップであるレンダリングが終わった
     // タイミングに当たる。
@@ -158,13 +158,13 @@ class ViewControllerLifeCycleSampleViewController: UIViewController {
         super.viewDidAppear(animated)
         print("✅ do - viewDidAppear(_: Bool)")
     }
-    
+
     // ビューの非表示
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         print("✅ do - viewWillDisappear(_: Bool)")
     }
-    
+
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         print("✅ do - viewDidDisappear(_: Bool)")
@@ -177,10 +177,10 @@ private extension ViewControllerLifeCycleSampleViewController {
         // よく用いられていた。
         let screenSize = UIScreen.main.bounds
         print("✅screenSize: \(screenSize)")
-        
-        
+
+
     }
-    
+
     func showScreenSizeUsingWindow() {
         // マルチタスク機能が搭載されたので、
         // スクリーンサイズとウィンドウサイズが異なる場合が出てきた。
@@ -189,7 +189,7 @@ private extension ViewControllerLifeCycleSampleViewController {
         let screenSize = UIApplication.shared.keyWindow?.bounds
         print("✅showScreenSizeUsingWindow: \(String(describing: screenSize))")
     }
-    
+
     func showScreenSizeUsingWindowScene() {
         let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
         let screenSize = scene?.screen.bounds
@@ -199,7 +199,7 @@ private extension ViewControllerLifeCycleSampleViewController {
 
 fileprivate class DogManager {
     let name: String
-    
+
     init(name: String) {
         self.name = name
     }

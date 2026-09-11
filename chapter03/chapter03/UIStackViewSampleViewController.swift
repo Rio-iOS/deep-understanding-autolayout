@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class UIStackViewSampleViewController: UIViewController {
+final class UIStackViewSampleViewController: UIViewController {
     override func viewDidLoad() {
     }
 }

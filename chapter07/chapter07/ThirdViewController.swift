@@ -30,10 +30,10 @@ import UIKit
 // UIContentSizeCategory.didChangeNotificationの通知を受け取り、
 // テーブルビューを再読み込みすることで新しいレイアウトが適用される
 final class ThirdViewController: UIViewController {
-    @IBOutlet weak var tableView: UITableView!
-    
+    @IBOutlet private weak var tableView: UITableView!
+
     private var people: [Person]?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         people = Person.generateCellData()
@@ -72,21 +72,21 @@ extension ThirdViewController: UITableViewDataSource {
         guard let people else {
             return 0
         }
-        
+
         return people.count
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ThirdViewCell.reuseIdentifier, for: indexPath) as? ThirdViewCell else {
             fatalError("ThirdViewCell identifier is invalid")
         }
-        
+
         guard let people else {
             return UITableViewCell()
         }
-        
+
         cell.layoutWithData(data: people[indexPath.row])
-        
+
         return cell
     }
 }

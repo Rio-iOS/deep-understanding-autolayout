@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class RenderingSumpleViewController: UIViewController {
+final class RenderingSumpleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -18,20 +18,20 @@ class RenderingSumpleViewController: UIViewController {
 private extension RenderingSumpleViewController {
     func setupViews() {
         view.backgroundColor = .systemBackground
-       
+
         let customView1 = CustomView()
         customView1.backgroundColor = .systemBlue
         let customView2 = CustomView()
         customView2.backgroundColor = .systemGreen
-        
+
         let stackView = UIStackView()
         stackView.axis = .vertical
         stackView.distribution = .fillEqually
         stackView.translatesAutoresizingMaskIntoConstraints = false
-       
+
         stackView.addArrangedSubview(customView1)
         stackView.addArrangedSubview(customView2)
-        
+
         view.addSubview(stackView)
 
         NSLayoutConstraint.activate([
@@ -48,25 +48,25 @@ fileprivate class CustomView: UIView {
         super.init(frame: frame)
         translatesAutoresizingMaskIntoConstraints = false
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override var intrinsicContentSize: CGSize {
         .init(width: 200, height: 100)
     }
-    
+
     override func updateConstraints() {
         super.updateConstraints()
         print("✅ do - updateConstraints()")
     }
-    
+
     override func layoutSubviews() {
         super.layoutSubviews()
         print("✅ do - layoutSubviews()")
     }
-   
+
     // フレーム情報が更新された後に、ディスプレイに変更を表示するために
     // draw(_: CGRect)が呼ばれる
     // iOSでは、draw(_: CGRect)が、それぞれのビューを一度だけ
@@ -86,7 +86,7 @@ fileprivate class CustomView: UIView {
         print("✅ do - draw(_: CGRect)")
         print("✅ rect: \(rect)")
     }
-   
+
     // setNeesDisplay() または seNeedsDisplay(_: CGRect)を
     // 呼ぶことで、再描画のトリガを与えて実行
     // タイマーを用いて1秒間に複数回レンダリングすることも可能

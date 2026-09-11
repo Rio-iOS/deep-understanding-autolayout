@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ScrollViewSampleViewController: UIViewController {
+final class ScrollViewSampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -18,12 +18,12 @@ class ScrollViewSampleViewController: UIViewController {
 private extension ScrollViewSampleViewController {
     func setupViews() {
         view.backgroundColor = .systemBackground
-        
+
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.showsHorizontalScrollIndicator = false
         scrollView.delegate = self
-        
+
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .horizontal
@@ -35,23 +35,23 @@ private extension ScrollViewSampleViewController {
             view.backgroundColor = .systemBlue
             stackView.addArrangedSubview(view)
         }
-        
+
         scrollView.addSubview(stackView)
-        
+
         view.addSubview(scrollView)
-        
+
         NSLayoutConstraint.activate([
             scrollView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             scrollView.heightAnchor.constraint(equalToConstant: 100),
-            
+
             stackView.topAnchor.constraint(equalTo: scrollView.topAnchor),
             stackView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
             stackView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
             stackView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
         ])
-        
+
         view.layoutIfNeeded()
         let contentWidth = stackView.arrangedSubviews.reduce(0) { $0 + $1.intrinsicContentSize.width + stackView.spacing }
         scrollView.contentSize = CGSize(width: contentWidth, height: scrollView.frame.height)
@@ -72,11 +72,11 @@ fileprivate class CustomView: UIView {
         layer.borderColor = UIColor.black.cgColor
         layer.borderWidth = 1.0
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override var intrinsicContentSize: CGSize {
         .init(width: 200, height: 100)
     }

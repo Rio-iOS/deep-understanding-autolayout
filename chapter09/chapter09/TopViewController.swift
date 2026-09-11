@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TopViewController: UIViewController {
+final class TopViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,22 +18,22 @@ class TopViewController: UIViewController {
 private extension TopViewController {
     func setupConstraints() {
         view.backgroundColor = .systemBackground
-        
+
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
-        
+
         let button1 = makeButton(title: "button1")
         button1.addTarget(self, action: #selector(showFirstViewController), for: .primaryActionTriggered)
-        
+
         stackView.addArrangedSubview(button1)
 
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.addSubview(stackView)
-        
+
         view.addSubview(scrollView)
-       
+
         NSLayoutConstraint.activate([
             // scrollView
             scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),

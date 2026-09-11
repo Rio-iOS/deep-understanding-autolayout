@@ -18,7 +18,7 @@
 		349009A32C6A160E00C3849E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349009A22C6A160E00C3849E /* ThirdViewController.swift */; };
 		349009A52C6A261A00C3849E /* ForthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349009A42C6A261A00C3849E /* ForthViewController.swift */; };
 		349009A72C6A266600C3849E /* ForthView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349009A62C6A266600C3849E /* ForthView.storyboard */; };
-		349009A92C6A2E3C00C3849E /* FifthViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349009A82C6A2E3C00C3849E /* FifthViewcontroller.swift */; };
+		349009A92C6A2E3C00C3849E /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349009A82C6A2E3C00C3849E /* FifthViewController.swift */; };
 		349009AC2C6A355100C3849E /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349009AB2C6A355000C3849E /* UIView+Extensions.swift */; };
 		349009AE2C6A371300C3849E /* NSLayoutConstraint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349009AD2C6A371300C3849E /* NSLayoutConstraint+Extensions.swift */; };
 		349009B02C6A468D00C3849E /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349009AF2C6A468D00C3849E /* SixthViewController.swift */; };
@@ -43,7 +43,7 @@
 		349009A22C6A160E00C3849E /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		349009A42C6A261A00C3849E /* ForthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForthViewController.swift; sourceTree = "<group>"; };
 		349009A62C6A266600C3849E /* ForthView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ForthView.storyboard; sourceTree = "<group>"; };
-		349009A82C6A2E3C00C3849E /* FifthViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewcontroller.swift; sourceTree = "<group>"; };
+		349009A82C6A2E3C00C3849E /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		349009AB2C6A355000C3849E /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		349009AD2C6A371300C3849E /* NSLayoutConstraint+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+Extensions.swift"; sourceTree = "<group>"; };
 		349009AF2C6A468D00C3849E /* SixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				349009A22C6A160E00C3849E /* ThirdViewController.swift */,
 				349009A42C6A261A00C3849E /* ForthViewController.swift */,
 				349009A62C6A266600C3849E /* ForthView.storyboard */,
-				349009A82C6A2E3C00C3849E /* FifthViewcontroller.swift */,
+				349009A82C6A2E3C00C3849E /* FifthViewController.swift */,
 				349009AF2C6A468D00C3849E /* SixthViewController.swift */,
 				349009B12C6A52F400C3849E /* SeventhViewController.swift */,
 				349009B32C6A5D9300C3849E /* EighthView.storyboard */,
@@ -209,7 +209,7 @@
 				3490099D2C69D1BD00C3849E /* Factories.swift in Sources */,
 				349009B02C6A468D00C3849E /* SixthViewController.swift in Sources */,
 				349009A52C6A261A00C3849E /* ForthViewController.swift in Sources */,
-				349009A92C6A2E3C00C3849E /* FifthViewcontroller.swift in Sources */,
+				349009A92C6A2E3C00C3849E /* FifthViewController.swift in Sources */,
 				3490098A2C69D01D00C3849E /* SceneDelegate.swift in Sources */,
 				349009B22C6A52F400C3849E /* SeventhViewController.swift in Sources */,
 				349009AE2C6A371300C3849E /* NSLayoutConstraint+Extensions.swift in Sources */,

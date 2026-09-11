@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class LayoutSubViewSampleViewController: UIViewController {
+final class LayoutSubViewSampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
@@ -18,11 +18,11 @@ class LayoutSubViewSampleViewController: UIViewController {
 private extension LayoutSubViewSampleViewController {
     func setupViews() {
         view.backgroundColor = .systemBackground
-        
+
         let customView = CustomView()
-        
+
         view.addSubview(customView)
-        
+
         NSLayoutConstraint.activate([
             customView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             customView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
@@ -38,11 +38,11 @@ fileprivate class CustomView: UIView {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .systemBackground
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-   
+
     // レイアウトの変更は、layoutSubviews()で実施
     // オーバーライドすることで、制約付与によるレイアウトでは難しい場合も実現可能
     // super.layoutSubviews()が呼び出された時点ですでに更新されているので、

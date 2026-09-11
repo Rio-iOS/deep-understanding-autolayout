@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ private extension ViewController {
         print("✅view width: \(width)")
         print("✅view height: \(height)")
     }
-    
+
     func showDeviceModel() {
         let model = UIDevice.current.model
         let systemName = UIDevice.current.systemName
@@ -38,7 +38,7 @@ private extension ViewController {
         print("✅iPhone system name: \(systemName)")
         print("✅iPhone system version: \(systemVersion)")
     }
-    
+
     func showTraitCollection() {
         let trait = traitCollection
         print("✅traitCollection: \(trait)")
