@@ -1,0 +1,65 @@
+[
+  {
+    "kind": "app",
+    "name": "chapter01",
+    "scheme": "chapter01",
+    "project": "chapter01/chapter01.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "chapter02",
+    "scheme": "chapter02",
+    "project": "chapter02/chapter02.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "chapter03",
+    "scheme": "chapter03",
+    "project": "chapter03/chapter03.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "chapter04",
+    "scheme": "chapter04",
+    "project": "chapter04/chapter04.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "chapter05",
+    "scheme": "chapter05",
+    "project": "chapter05/chapter05.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "chapter06",
+    "scheme": "chapter06",
+    "project": "chapter06/chapter06.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "chapter07",
+    "scheme": "chapter07",
+    "project": "chapter07/chapter07.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "chapter08",
+    "scheme": "chapter08",
+    "project": "chapter08/chapter08.xcodeproj",
+    "workspace": null
+  },
+  {
+    "kind": "app",
+    "name": "chapter09",
+    "scheme": "chapter09",
+    "project": "chapter09/chapter09.xcodeproj",
+    "workspace": null
+  }
+]
